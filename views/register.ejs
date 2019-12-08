@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <title><%= title %></title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="images/nhs.png" alt="">
+                <h2 class="text-center">Admin</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation"><a href="/">Client Information</a></li>
+                    <li role="presentation" class="active"><a href="/register">Register</a></li>
+                    <li role="presentation"><a href="/alert">Alert</a></li>
+                    <li role="presentation"><a href="/report">Report</a></li>
+                    <li role="presentation"><a href="/login">Logout</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-10">
+                <br>
+                <h2 class="page-header">Register Company</h2>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" name="company_name" class="form-control" id="companyName">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" class="form-control" id="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="businessType">Business Type</label>
+                        <input type="text" name="business_type" class="form-control" id="businessType">
+                    </div>
+                    <div class="form-group">
+                        <label for="companyNo">Company No.</label>
+                        <input type="number" name="company_no" class="form-control" id="companyNo">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="register" class="btn btn-primary" id="register" value="Register">
+                        <input type="reset" name="reset" class="btn btn-warning" id="reset" value="Reset">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</html>

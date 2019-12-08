@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+  <title><%= title %></title>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="images/nhs.png" alt="">
+        <h2 class="text-center">Admin</h2>
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="/">Client Information</a></li>
+          <li role="presentation"><a href="/register">Register</a></li>
+          <li role="presentation"><a href="/alert">Alert</a></li>
+          <li role="presentation"><a href="/report">Report</a></li>
+          <li role="presentation"><a href="/login">Logout</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-10">
+        <br>
+        <h2 class="page-header">Client Information</h2>
+        <table class="table table-bordered table-hovered">
+          <thead>
+            <th>Company</th>
+            <th>Address</th>
+            <th>Company No.</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <td>test</td>
+            <td>test</td>
+            <td>222222222222222</td>
+            <td>
+              <a href="#" class="btn btn-success">View</a>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</html>
